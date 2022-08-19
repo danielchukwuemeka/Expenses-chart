@@ -1,0 +1,133 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(243, 194, 137);
+}
+
+div.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+div.sub-containers {
+    padding: 15px;
+    background-color: rgb(235, 116, 48);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+div.sub-containers:nth-child(2) {
+    margin-top: 20px;
+    background-color: rgb(248, 239, 225);
+    flex-direction: column;
+}
+
+.headers {
+    color: rgb(248, 238, 210) !important;
+}
+
+div.c-heading {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+#chart-container {
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    rotate: 360deg;
+}
+
+div.charts-content {
+    padding: 5px;
+    display: flex;
+    width: 50px;
+    flex-flow: column;
+    position: relative;
+}
+
+div.inner-cc {
+    display: flex; 
+    height: 100%; 
+    justify-content: center; 
+    /* flex-direction: column; */
+    align-items: flex-end;
+    position: relative;
+}
+
+div.chart-details {
+    background-color: #000; 
+    position: absolute; 
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.white-para {
+    color: #fff;
+}
+
+div.charts-content p.day {
+    text-align: center;
+    font-size: 	13px;
+    color: rgb(105, 105, 105);
+}
+
+div.chart {
+    width: 100%;
+    background-color:  rgb(235, 116, 48);
+    border-radius: 5px;
+    align-self: flex-end;
+    box-shadow: 1px 1px 5px rgb(133, 131, 131);
+}
+
+div.chart:hover {
+    background-color: rgb(109, 156, 109);
+    cursor: pointer;
+}
+
+hr#demacator {
+    margin: 10px 10px 20px;
+}
+
+div.c-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.c-footer div.f-contents {
+    text-align: center;
+}
+
+div.f-contents h3#f-balance {
+    font-size: 28px;
+}
+
+div.c-footer div.f-contents:nth-child(2) {
+    text-align: right;
+}
+p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+div.f-contents p {
+    color: rgb(109, 107, 107);
+}
+
+.bold {
+    font-weight: bolder;
+    color: #000 !important;
+}

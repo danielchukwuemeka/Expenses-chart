@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses chart</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sub-containers">
+            <div class="headers">
+                <p>My balance</p>
+                <h2 id="h-balance"></h2>
+            </div>
+            <div class="headers h-image">
+                <img id="logo" src="images/logo.svg" alt="">
+            </div>
+        </div>
+        <div class="sub-containers">
+            <div class="content c-heading">Spending - Last 7 days</div>
+            <div id="chart-container" class="content">
+                <div class="charts-content">
+                    <div class="inner-cc">
+                        <div onmouseout="removeChartDetials(this)" onmouseenter="showAmount(this)" class="chart" id="mon"></div>
+                    </div>
+                    <p class="day">mon</p>                       
+                </div>
+
+                <div class="charts-content">
+                    <div class="inner-cc">
+                        <div onmouseout="removeChartDetials(this)" onmouseenter="showAmount(this)" class="chart" id="tue"></div>
+                    </div>
+                    <p class="day">tue</p>
+                </div>
+
+                <div class="charts-content">
+                    <div class="inner-cc">
+                        <div onmouseout="removeChartDetials(this)" onmouseenter="showAmount(this)" class="chart" id="wen"></div>
+                    </div>
+                    <p class="day">wed</p>
+                </div>
+
+                <div class="charts-content">
+                    <div class="inner-cc">
+                        <div onmouseout="removeChartDetials(this)" onmouseenter="showAmount(this)" class="chart" id="thu"></div>
+                    </div>
+                    <p class="day">thu</p>
+                </div>
+
+                <div class="charts-content">
+                    <div class="inner-cc">
+                        <div onmouseout="removeChartDetials(this)" onmouseenter="showAmount(this)" class="chart" id="fri"></div>
+                    </div>
+                    <p class="day">fri</p>
+                </div>
+
+                <div class="charts-content">
+                    <div class="inner-cc">
+                        <div onmouseout="removeChartDetials(this)" onmouseenter="showAmount(this)" class="chart" id="sat"></div>
+                    </div>
+                    <p class="day">sat</p>
+                </div>
+
+                <div class="charts-content">
+                    <div class="inner-cc">
+                        <div onmouseout="removeChartDetials(this)" onmouseenter="showAmount(this)" class="chart" id="sun"></div>
+                    </div>
+                    <p class="day">sun</p>
+                </div>
+            </div>
+            <hr id="demacator">	
+            <div class="content c-footer">
+                <div class="f-contents">
+                    <p>Total this month</p>
+                    <h3 id="f-balance" class="bold"></h3>
+                </div>
+                <div class="f-contents">
+                    <p id="p-increase" class="bold"></p>
+                    <p>from last month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./data.json"></script> -->
+    <script src="./javascript/scripts.js"></script>
+</body>
+</html>
